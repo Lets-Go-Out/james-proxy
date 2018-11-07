@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/style.css">
+    <title>FEC Demo</title>
+  </head>
+  <body>
+    <div id="overview"></div>
+    <div id="reservation"></div>
+    <div id="gallery-container"></div>
+    <div id="menu"></div>
+    <div id="25"></div>
+
+    <script src="/lib/react.development.js"></script>
+    <script src="/lib/react-dom.development.js"></script>
+    <script src="http://localhost:3001/app.js"></script>
+    <script src="http://localhost:3002/app.js"></script>
+    <script src="http://localhost:3003/app.js"></script>
+    <script src="http://localhost:3004/app.js"></script>
+    <script src="http://localhost:3005/app.js"></script>
+    <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
+    <script>
+      ReactDOM.render(
+        React.createElement(Info),
+        document.getElementById('overview')
+      );
+      ReactDOM.render(
+        React.createElement(CountDown),
+        document.getElementById('25')
+      );
+      ReactDOM.render(
+        React.createElement(Related),
+        document.getElementById('gallery-container')
+      );
+      ReactDOM.render(
+        React.createElement(Reviews),
+        document.getElementById('reservation')
+      );
+    </script>
+  </body>
+</html>
