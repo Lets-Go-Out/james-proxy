@@ -2,7 +2,6 @@ const mysql = require('mysql');
 const configVars = require('../../config.js');
 
 const connection = mysql.createConnection({
-  host: 'localhost',
   user: configVars.dbUsername,
   password: configVars.dbPassword,
   database: 'droptable',

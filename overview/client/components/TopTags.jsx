@@ -24,10 +24,10 @@ const TopTags = (props) => {
   return (
     <Row>
       <Col md={10} mdOffset={1}>
-        <h3>
+        <div styleName="styles.top_tag_heading">
           <Col md={3} lg={2}>Top Tags:</Col>
           {topTagsJsx}
-        </h3>
+        </div>
       </Col>
     </Row>
   );

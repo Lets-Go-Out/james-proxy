@@ -3,7 +3,7 @@ const dummyData = require('./dummyData.json');
 
 const dbConnection = mysql.createConnection({
   user: 'root',
-  password: 'Why you checkin\' out my password tho?',
+  password: 'ph@sePr1meM3tric$$$',
   database: 'drop_table',
 });
 

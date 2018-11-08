@@ -42,22 +42,22 @@ CREATE TABLE reviews (
   FOREIGN KEY (restaurant)
     REFERENCES restaurants(id),
   FOREIGN KEY (user)
-    REFERENCES users(id)  
+    REFERENCES users(id)
 );
 
-LOAD DATA LOCAL INFILE './fakeRestaurants.csv'
+LOAD DATA LOCAL INFILE 'C:\\Users\\Owner\\isaacProxyLayer\\Han-DropTable-Menu\\fakeRestaurants.csv'
 INTO TABLE restaurants
 FIELDS TERMINATED BY ',' ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 
-LOAD DATA LOCAL INFILE './fakeusers.csv'
+LOAD DATA LOCAL INFILE 'C:\\Users\\Owner\\isaacProxyLayer\\Han-DropTable-Menu\\fakeusers.csv'
 INTO TABLE users
 FIELDS TERMINATED BY ',' ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 
-LOAD DATA LOCAL INFILE './fakeReviews.csv'
+LOAD DATA LOCAL INFILE 'C:\\Users\\Owner\\isaacProxyLayer\\Han-DropTable-Menu\\fakeReviews.csv'
 INTO TABLE reviews
 FIELDS TERMINATED BY ',' ENCLOSED BY '"'
 LINES TERMINATED BY '\n'

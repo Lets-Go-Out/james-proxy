@@ -1,18 +1,18 @@
-body {
+.overview_grid, .overview_header, p, div, .top_tag, .review_average_number, .review_count, .price_range, .cuisine_type, .top_tag_heading, .description_paragraph, .description_read_more, .additional_tag, {
   font-family: BrandonText,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
   -webkit-font-smoothing: antialiased;
 }
 
-h1, p, div, span {
+.overview_header, p, div, span {
   color: #222;
 }
 
-h2, h3, h4, .tag_name {
+.top_tag_heading, .tag_name, .private_dining_header {
   color: #600;
   font-weight: bold;
 }
 
-h1 {
+.overview_header, {
   font-size: 48px;
 }
 
@@ -43,7 +43,7 @@ h1 {
   font-size: 16px;
 }
 
-.review_average_stars,  .review_average_number, .review_count, .price_range, .cuisine_type {
+.review_average_stars,  .review_average_number, .review_count, .price_range, .cuisine_type, .top_tag_heading, .private_dining_header {
   font-size: 22px;
 }
 

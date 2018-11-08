@@ -32,19 +32,19 @@ const Report = (props) => {
           <div className="ReportDiv">
             <h4 align="left">Report a photo problem</h4>
             <hr />
-            <button className="btn btn-primary" type="button" onClick={() => props.handleCloseModal()}>
+            <button className="lana-btn lana-btn-primary" type="button" onClick={() => props.handleCloseModal()}>
               Unrelated to restaurant
             </button>
             &nbsp;
-            <button className="btn btn-primary" type="button" onClick={() => props.handleCloseModal()}>
+            <button className="lana-btn lana-btn-primary" type="button" onClick={() => props.handleCloseModal()}>
               Inappropriate content
             </button>
             &nbsp;
-            <button className="btn btn-primary" type="button" onClick={() => props.handleCloseModal()}>
+            <button className="lana-btn lana-btn-primary" type="button" onClick={() => props.handleCloseModal()}>
               I do not like this photo
             </button>
             &nbsp;
-            <button className="btn btn-default" type="button" onClick={() => props.handleCloseModal()}>
+            <button className="lana-btn lana-btn-default" type="button" onClick={() => props.handleCloseModal()}>
               Cancel
             </button>
             &nbsp;

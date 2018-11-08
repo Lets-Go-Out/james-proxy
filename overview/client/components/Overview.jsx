@@ -56,10 +56,10 @@ class Overview extends React.Component {
     // ];
 
     return (
-      <Grid>
+      <Grid styleName="styles.overview_grid">
         <Row>
           <Col md={10} mdOffset={1}>
-            <PageHeader>{this.state.currentRestaurant.name}</PageHeader>
+            <PageHeader styleName="styles.overview_header">{this.state.currentRestaurant.name}</PageHeader>
           </Col>
         </Row>
         <Row>

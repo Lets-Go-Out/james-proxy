@@ -11,15 +11,15 @@ const Stars = ({ num }) => {
   const stars = [];
   for (let i = 1; i <= 5; i += 1) {
     if (i <= numStars) {
-      stars.push(<div className={`${styles.fullStar} ${styles.star}`} />);
+      stars.push(<div styleName={'styles.fullStar styles.star'} />);
     } else if (i - numStars === 0.25) {
-      stars.push(<div className={`${styles.threeQuarterStar} ${styles.star}`} />);
+      stars.push(<div styleName={'styles.threeQuarterStar styles.star'} />);
     } else if (i - numStars === 0.5) {
-      stars.push(<div className={`${styles.halfStar} ${styles.star}`} />);
+      stars.push(<div styleName={'styles.halfStar styles.star'} />);
     } else if (i - numStars === 0.75) {
-      stars.push(<div className={`${styles.quarterStar} ${styles.star}`} />);
+      stars.push(<div styleName={'styles.quarterStar styles.star'} />);
     } else {
-      stars.push(<div className={`${styles.emptyStar} ${styles.star}`} />);
+      stars.push(<div styleName={'styles.emptyStar styles.star'} />);
     }
   }
   return (
@@ -47,10 +47,11 @@ class MiniSummary extends React.Component {
 
   componentDidMount() {
     const { id } = this.props;
-    fetch(`${reviewsURL}/restaurants/${id}/reviewSummary`)
+    fetch(`http://localhost:3005/restaurants/${id}/reviewSummary`)
       .then(data => data.json())
       .then((data) => {
         const { overallAvg, numReviews } = data;
+        console.log('Success! Data:', { overallAvg, numReviews });
         this.setState({ overallAvg, numReviews });
       })
       .catch(err => console.log(err));

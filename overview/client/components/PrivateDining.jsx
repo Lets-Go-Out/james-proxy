@@ -11,7 +11,7 @@ const PrivateDining = (props) => {
   if (props.privateDiningText !== 'NULL') {
     return (
       <div>
-        <h3>Private Dining</h3>
+        <div styleName="private_dining_header">Private Dining</div>
         <p>
           {props.privateDiningText}
         </p>

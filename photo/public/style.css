@@ -50,8 +50,9 @@ body {
   text-align: center;
 }
 .modal1-body .modal1-close {
-  right: 0; top: -40px;
+  right: 20; top: 40px;
   border-radius: 0 0 0 5px;
+  position:fixed;
 }
 .modal1-body .modal1-next,
 .modal1-body .modal1-prev {
@@ -78,7 +79,7 @@ body {
   background: white;
 }
 
-.btn {
+.lana-btn {
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
@@ -99,14 +100,14 @@ body {
 
 }
 
-.btn-primary {
+.lana-btn-primary {
   color: #fff;
   background-color: #60b2d0;
   border-color: #2e6da4
 
 }
 
-.btn-default {
+.lana-btn-default {
   color: #60b2d0;
   background-color: #fff;
   border-color: #ccc
